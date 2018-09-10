@@ -1,0 +1,4 @@
+project_dir: /your/project/public/dir
+mode: daily
+drive_root: Bafrahaber_dev
+spec_folder: 2018
