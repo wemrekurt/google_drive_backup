@@ -1,14 +1,21 @@
-# Kurulum
+# Google Drive Backup Script
+
+## Preparation
+
+This script is using google_drive gem. Please firstly install it:
+
 ```gem install google_drive```
 
-1. https://github.com/gimite/google-drive-ruby/blob/master/doc/authorization.md talimatları uygulayıp uygulama oluştur
-2. https://console.developers.google.com/apis/library/drive.googleapis.com google drive api izin ver.
-3. config.json dosyasına verileri gir
-4. Dosyayı ruby ile çalışıtrdığınızda bir hata verecek, o hatadaki url ziyaret edin.
-5. Açılan sayfada izin verdikten sonra verilen kodu konsolda yapıştır
+### Configurations
+Change *config.yml* file for your use!
 
---
+## Installation
+To use this backup script, follow these steps:
 
-# Ayarlar
-
-config.yml dosyasındaki ayarları unutma!
+1. Go to [google_drive gem's authorization README page](https://github.com/gimite/google-drive-ruby/blob/master/doc/authorization.md) and create a new application by following the steps in guide. 
+2. Go to [Google's Drive API Developer Console page](https://console.developers.google.com/apis/library/drive.googleapis.com) and authorise your application.
+3. Edit the *config.json* file with the information you get from Google Developer Console.
+4. Run the script with ruby: 
+```ruby backup.rb```
+In first time you run, it will give error, no problem, visit the URL in error message.
+5. In that page, going to grant permission, **Allow** it, and copy the *key* and paste to your terminal.
