@@ -2,7 +2,7 @@ require 'google_drive'
 require 'yaml'
 @config = YAML::load_file(File.join(__dir__, 'config.yml'))
 
-full_path = config['project_dir']
+full_path = @config['project_dir']
 session = GoogleDrive::Session.from_config("config.json")
 
 if @config['mode'] == 'daily'
