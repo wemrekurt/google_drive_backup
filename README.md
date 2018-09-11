@@ -1,4 +1,5 @@
 # Kurulum
+```gem install google_drive```
 
 1. https://github.com/gimite/google-drive-ruby/blob/master/doc/authorization.md talimatları uygulayıp uygulama oluştur
 2. https://console.developers.google.com/apis/library/drive.googleapis.com google drive api izin ver.
@@ -8,6 +9,6 @@
 
 --
 
-#Ayarlar
+# Ayarlar
 
 config.yml dosyasındaki ayarları unutma!
